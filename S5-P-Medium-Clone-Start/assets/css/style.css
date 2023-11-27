@@ -16,10 +16,7 @@ button
     background-color: black;
     color: white;
     border-radius: 25%;
-    padding-top: 0.5 rem;
-    padding-bottom: 0.5 rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: 100%;
 }
 header div:first-child
 {
@@ -42,17 +39,17 @@ header nav ul
 {
     list-style: none;
     display: flex;
-    align-items: center;
+    align-items:center;
+    justify-content: space-between;
 }
 header nav ul li
 {
-    margin: 2rem;
-    padding: 2rem;
-    width: 2rem;
+    margin: 5%;
 }
 .Curious
 {
-    padding: 5rem;
+    padding: 5%;
+    padding-right: 0%;
     display: flex;
     justify-content: space-between;
     border-bottom:1px solid black;
@@ -67,15 +64,15 @@ header nav ul li
 }
 .Curious button
 {
-    margin-top: 1rem;
-    max-width: 12rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 1%;
+    max-width: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 .Curious h2
 {
-    font-size: 6rem;
-    margin-bottom: 1rem;
+    font-size: 400%;
+    margin-bottom: 1%;
 }
 
  /*Titoli articoli*/
@@ -90,7 +87,7 @@ main
 h3
 {
     color: black;
-    font-size: 2rem;
+    font-size: 100%;
     font-weight: bold;
 }
 /*Article*/
@@ -98,29 +95,36 @@ article
 {
     margin-left: 5%;
 }
+article img
+{
+    max-width: 20%;
+}
 .divAutore img
 {
-    width: 2rem;
+    width: 4%;
 }
-section:first-child article p:nth-of-type(2) /*Autori trending*/
+#Trending .divAutore img
 {
-    font-size: 2rem;
-    color: black;
+    width: 8%;
 }
-
-.divAutore p /*Autori non trending*/
+.divAutore p /*Autori*/
 {
-    font-size: 1rem;
+    font-size: 100%;
     color: black;
 }
 .FlexDiv
 {
-    margin-top: 3rem;
+    margin-top: 3%;
     display: flex;
 }
 article .FlexDiv
 {
     align-items: center;
+    width: 100%;
+}
+#NotTrending .FlexDiv
+{
+    justify-content:space-between;
 }
 span
 {
@@ -140,8 +144,8 @@ span
 .logoTrending
 {
     position: absolute;
-    left: 4rem;
-    top: 2rem;
+    left: 4%;
+    top: 2%;
 }
 .FlexDivTrending
 {
@@ -154,7 +158,7 @@ span
 }
 .numero
 {
-    font-size: 2rem;
+    font-size: 2%;
     font-weight: bold;
     color: #E6E7E7;
     align-self: flex-start;
@@ -162,7 +166,7 @@ span
 /*Fine trending*/
 .Autore
 {
-    margin-bottom: 1rem;
+    margin-bottom: 1%;
 }
 .divAutore
 {
@@ -172,21 +176,22 @@ span
 .Segnalibro
 {
     align-self: flex-end;
-    padding-left: 2rem;
+    padding-left: 2%;
 }
 .TestoStella
 {
     display: flex;
-    margin-top: 0.5rem;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
 }
 .TestoStella img
 {
-    margin-left: 1rem;
+    margin-left: 1%;
 }
 /*Aside*/
 aside
 {
-    margin-left: 2rem;
+    margin-left: 2%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -194,7 +199,7 @@ aside
 }
 aside h3
 {
-    font-size: 1.5rem;
+    font-size: 100%;
 }
 aside nav ul
 {
@@ -206,12 +211,12 @@ aside nav:first-of-type ul
 {
     
     border-bottom: 1px solid gray;
-    margin-bottom: 1rem;
+    margin-bottom: 1%;
 }
 aside nav ul li
 {
-    padding: 0.5rem;
-    margin: 1rem;
+    padding: 0.5%;
+    margin: 1%;
 }
 aside nav:first-of-type ul li
 {
@@ -242,3 +247,50 @@ aside nav:first-of-type ul li
     0%   {background-color: #FFC017;}
   100% {background-color: white;}
 }
+/*481px — 768px: iPads, Tablets*/
+@media (min-width: 481px) and  (max-width: 768px)
+{
+    .FlexDivTrending article
+    {
+        width:40%;
+    }
+    #NotTrending
+    {
+        flex-direction: column;
+    }
+    aside
+    {
+        display: flex;
+        align-items:flex-start;
+        order:0;
+        max-width: 100%;
+    }
+    #NotTrending section
+    {
+        order:1;
+    }
+}
+/*320px — 480px: Mobile devices*/
+@media screen and  (max-width: 480px) 
+{
+    .FlexDivTrending article
+    {
+        width:80%;
+    }
+    header ul li:nth-child(1)
+    {
+        display: none;
+    }
+    header ul li:nth-child(2)
+    {
+        display: none;
+    }
+    header ul li:nth-child(3)
+    {
+        display: none;
+    }
+    svg
+    {
+        display: none;
+    }
+} 
