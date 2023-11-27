@@ -27,8 +27,8 @@ header div:first-child
     justify-content: space-around;
     align-items: center;
     border-bottom:1px solid black;
-    
 }
+
 header nav
 {
     display: flex;
@@ -216,4 +216,17 @@ aside nav ul li
 aside nav:first-of-type ul li
 {
     border: 1px solid #E6E7E7;
+}
+/*Animazione header verde*/
+.SfondoVerde
+{
+    animation: CambiaSfondo 1s ease-in-out 0.5s forwards;
+    -moz-animation: CambiaSfondo 1s ease-in-out 0.5s forwards;
+    -webkit-animation: CambiaSfondo 1s ease-in-out 0.5s forwards;
+    -o-animation: CambiaSfondo 1s ease-in-out 0.5s forwards;
+}
+@keyframes CambiaSfondo
+{
+    0%   {background-color: #FFC017;}
+  100% {background-color: #1a8917;}
 }
