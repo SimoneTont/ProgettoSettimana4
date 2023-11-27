@@ -125,37 +125,39 @@ span
     border-radius: 25%;
     background-color: #E6E7E7;
 }
+#Trending span
+{
+    color: gray;
+    background-color: white;
+}
 /*Sezione trending*/
-#Trending
-{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    border-bottom: 1px solid gray;
-}
-#Trending article p:first-of-type 
-{
-    color: #E6E7E7;
-    font-size: 2rem;
-    float: left;
-    font-weight: bold;
-}
-#Trending div img
+.logoTrending img
 {
     float: left;
 }
-#Trending div
+.logoTrending
 {
     position: absolute;
     left: 4rem;
     top: 2rem;
 }
-#Trending article
+.FlexDivTrending
 {
-    padding-top: 3rem;
-    margin: 2rem;
-    max-width: 25%;
+    display: flex;
+    flex-wrap: wrap;
 }
+.FlexDivTrending article
+{
+    width:25%;
+}
+.numero
+{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #E6E7E7;
+    align-self: flex-start;
+}
+/*Fine trending*/
 .Autore
 {
     margin-bottom: 1rem;
