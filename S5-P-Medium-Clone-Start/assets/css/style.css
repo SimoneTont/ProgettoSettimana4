@@ -1,0 +1,41 @@
+header
+{
+    border-bottom:1px solid black;
+}
+aside
+{
+    border-bottom:1px solid black;
+}
+article p:last-child
+{
+    border-bottom:1px solid black;
+}
+h3 /*Titoli*/
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+header
+{
+    background-color: #FFC017;
+}
+article img:first-of-type
+{
+    float: left;
+    width: 2rem;
+}
+section:first-child article p:first-of-type /*Numeri trending*/
+{
+    color: #E6E7E7;
+    font-size: 2rem;
+    float: left;
+}
+section:first-child article p:nth-of-type(2) /*Autori trending*/
+{
+    font-size: 1.5rem;
+}
+
+section:nth-child(2) article p:first-of-type /*Autori non trending*/
+{
+    font-size: 1.5rem;
+}
