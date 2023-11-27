@@ -9,6 +9,7 @@ header
     background-color: #FFC017;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 button
 {
@@ -75,38 +76,54 @@ header nav ul li
     margin-bottom: 1rem;
 }
 
-h3 /*Titoli articoli*/
-{
-    font-size: 2rem;
-    font-weight: bold;
-}
+ /*Titoli articoli*/
 svg
 {
     max-width: 30%;
+}
+main
+{
+    color: gray;
+}
+h3
+{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
 }
 /*Article*/
 article
 {
     margin-left: 5%;
 }
-article div img
+.divAutore img
 {
-    float: left;
     width: 2rem;
 }
-
 section:first-child article p:nth-of-type(2) /*Autori trending*/
 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: black;
 }
 
-section:nth-child(2) article p:first-of-type /*Autori non trending*/
+.divAutore p /*Autori non trending*/
 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    color: black;
 }
 .FlexDiv
 {
+    margin-top: 3rem;
     display: flex;
+}
+article .FlexDiv
+{
+    align-items: center;
+}
+span
+{
+    border-radius: 25%;
+    background-color: #E6E7E7;
 }
 /*Sezione trending*/
 #Trending
@@ -121,6 +138,7 @@ section:nth-child(2) article p:first-of-type /*Autori non trending*/
     color: #E6E7E7;
     font-size: 2rem;
     float: left;
+    font-weight: bold;
 }
 #Trending div img
 {
@@ -142,8 +160,16 @@ section:nth-child(2) article p:first-of-type /*Autori non trending*/
 {
     margin-bottom: 1rem;
 }
-/*Seconda sezione*/
-.FlexDiv section article
+.divAutore
 {
     display: flex;
+    align-items: center;
+}
+.Segnalibro
+{
+    float: right;
+}
+aside
+{
+    margin-left: 2rem;
 }
