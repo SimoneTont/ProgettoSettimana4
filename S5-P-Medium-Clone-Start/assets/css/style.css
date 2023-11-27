@@ -167,9 +167,49 @@ span
 }
 .Segnalibro
 {
-    float: right;
+    align-self: flex-end;
+    padding-left: 2rem;
 }
+.TestoStella
+{
+    display: flex;
+    margin-top: 0.5rem;
+}
+.TestoStella img
+{
+    margin-left: 1rem;
+}
+/*Aside*/
 aside
 {
     margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 40%;
+}
+aside h3
+{
+    font-size: 1.5rem;
+}
+aside nav ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+aside nav:first-of-type ul
+{
+    
+    border-bottom: 1px solid gray;
+    margin-bottom: 1rem;
+}
+aside nav ul li
+{
+    padding: 0.5rem;
+    margin: 1rem;
+}
+aside nav:first-of-type ul li
+{
+    border: 1px solid #E6E7E7;
 }
