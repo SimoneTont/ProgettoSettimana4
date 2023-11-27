@@ -143,9 +143,10 @@ span
 }
 .logoTrending
 {
-    position: absolute;
-    left: 4%;
-    top: 2%;
+    margin-left:5%;
+    margin-top:5%;
+    margin-bottom: 2%;
+    display: flex;
 }
 .FlexDivTrending
 {
