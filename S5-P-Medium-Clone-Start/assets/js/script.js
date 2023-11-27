@@ -9,3 +9,20 @@ function myFunction() {
     document.querySelector("header").className=""
   }
 }
+//Funzione m random
+let arrayG=document.querySelectorAll("g [opacity]")
+let n=document.querySelectorAll("g [opacity]").length;
+let casuale=0;
+function giveMeRandom ()
+{
+    {
+        for(i = 0; i < n; i++)
+        {
+            casuale=Math.round(Math.random());
+            console.log(arrayG[i].attributes.opacity)
+            arrayG[i].attributes.opacity.value=casuale;
+        }
+    }
+}
+giveMeRandom();
+setInterval(giveMeRandom, 500);
