@@ -68,7 +68,9 @@ header nav ul li
 .Curious button
 {
     margin-top: 1rem;
-    max-width: 8rem;
+    max-width: 12rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .Curious h2
 {
