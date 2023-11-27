@@ -19,8 +19,16 @@ function giveMeRandom ()
         for(i = 0; i < n; i++)
         {
             casuale=Math.round(Math.random());
-            console.log(arrayG[i].attributes.opacity)
-            arrayG[i].attributes.opacity.value=casuale;
+            if(casuale===0)
+            {
+                arrayG[i].classList.add("randoM");
+            }
+            else
+            {
+                arrayG[i].classList.remove("randoM");
+            }
+            //console.log(arrayG[i].attributes.opacity)
+            //arrayG[i].attributes.opacity.value=casuale;
         }
     }
 }
