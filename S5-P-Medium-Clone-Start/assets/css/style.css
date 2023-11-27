@@ -1,35 +1,100 @@
+body
+{
+    font-family: Spectral,sans-serif;
+}
+/*Header*/
 header
 {
     border-bottom:1px solid black;
+    background-color: #FFC017;
+    position: sticky;
+    top: 0;
 }
-aside
+button
 {
-    border-bottom:1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 25%;
+    padding-top: 0.5 rem;
+    padding-bottom: 0.5 rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-article p:last-child
+header div:first-child
 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-bottom:1px solid black;
+    
 }
-h3 /*Titoli*/
+header nav
+{
+    display: flex;
+}
+header a
+{
+    text-decoration: none;
+    color: black;
+}
+header nav ul 
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+header nav ul li
+{
+    margin: 2rem;
+    padding: 2rem;
+    width: 2rem;
+}
+.Curious
+{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid black;
+    background-color: #FFC017;
+}
+.Curious div
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.Curious button
+{
+    margin-top: 1rem;
+    max-width: 8rem;
+}
+.Curious h2
+{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+h3 /*Titoli articoli*/
 {
     font-size: 2rem;
     font-weight: bold;
 }
-header
+svg
 {
-    background-color: #FFC017;
+    max-width: 30%;
 }
-article img:first-of-type
+/*Article*/
+article
+{
+    margin-left: 5%;
+}
+article div img
 {
     float: left;
     width: 2rem;
 }
-section:first-child article p:first-of-type /*Numeri trending*/
-{
-    color: #E6E7E7;
-    font-size: 2rem;
-    float: left;
-}
+
 section:first-child article p:nth-of-type(2) /*Autori trending*/
 {
     font-size: 1.5rem;
@@ -38,4 +103,47 @@ section:first-child article p:nth-of-type(2) /*Autori trending*/
 section:nth-child(2) article p:first-of-type /*Autori non trending*/
 {
     font-size: 1.5rem;
+}
+.FlexDiv
+{
+    display: flex;
+}
+/*Sezione trending*/
+#Trending
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+#Trending article p:first-of-type 
+{
+    color: #E6E7E7;
+    font-size: 2rem;
+    float: left;
+}
+#Trending div img
+{
+    float: left;
+}
+#Trending div
+{
+    position: absolute;
+    left: 4rem;
+    top: 2rem;
+}
+#Trending article
+{
+    padding-top: 3rem;
+    margin: 2rem;
+    max-width: 25%;
+}
+.Autore
+{
+    margin-bottom: 1rem;
+}
+/*Seconda sezione*/
+.FlexDiv section article
+{
+    display: flex;
 }
