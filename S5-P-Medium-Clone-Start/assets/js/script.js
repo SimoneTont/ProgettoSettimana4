@@ -2,8 +2,10 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {
   if (document.documentElement.scrollTop > 400) {
-    document.querySelector("header").className = "SfondoVerde";
+    document.querySelector("button").className= "SfondoVerde";
+    document.querySelector("header").className= "SfondoBianco";
   } else {
-    document.querySelector("header").className = "";
+    document.querySelector("button").className= "";
+    document.querySelector("header").className=""
   }
 }

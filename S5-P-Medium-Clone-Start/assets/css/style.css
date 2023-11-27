@@ -217,16 +217,28 @@ aside nav:first-of-type ul li
 {
     border: 1px solid #E6E7E7;
 }
-/*Animazione header verde*/
+/*Animazioni header*/
 .SfondoVerde
 {
-    animation: CambiaSfondo 1s ease-in-out 0.5s forwards;
-    -moz-animation: CambiaSfondo 1s ease-in-out 0.5s forwards;
-    -webkit-animation: CambiaSfondo 1s ease-in-out 0.5s forwards;
-    -o-animation: CambiaSfondo 1s ease-in-out 0.5s forwards;
+    animation: CambiaSfondoVerde 1s ease-in-out 0.5s forwards;
+    -moz-animation: CambiaSfondoVerde 1s ease-in-out 0.5s forwards;
+    -webkit-animation: CambiaSfondoVerde 1s ease-in-out 0.5s forwards;
+    -o-animation: CambiaSfondoVerde 1s ease-in-out 0.5s forwards;
 }
-@keyframes CambiaSfondo
+.SfondoBianco
+{
+    animation: CambiaSfondoBianco 1s ease-in-out 0.5s forwards;
+    -moz-animation: CambiaSfondoBianco 1s ease-in-out 0.5s forwards;
+    -webkit-animation: CambiaSfondoBianco 1s ease-in-out 0.5s forwards;
+    -o-animation: CambiaSfondoBianco 1s ease-in-out 0.5s forwards;
+}
+@keyframes CambiaSfondoVerde
+{
+    0%   {background-color: black;}
+  100% {background-color: #1a8917;}
+}
+@keyframes CambiaSfondoBianco
 {
     0%   {background-color: #FFC017;}
-  100% {background-color: #1a8917;}
+  100% {background-color: white;}
 }
