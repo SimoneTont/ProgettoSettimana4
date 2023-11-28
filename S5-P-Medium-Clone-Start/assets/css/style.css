@@ -259,6 +259,10 @@ aside nav:first-of-type ul li
     {
         flex-direction: column;
     }
+    #NotTrending section
+    {
+        order:1;
+    }
     aside
     {
         display: flex;
@@ -266,10 +270,7 @@ aside nav:first-of-type ul li
         order:0;
         max-width: 100%;
     }
-    #NotTrending section
-    {
-        order:1;
-    }
+    
 }
 /*320px — 480px: Mobile devices*/
 @media screen and  (max-width: 480px) 
@@ -293,6 +294,22 @@ aside nav:first-of-type ul li
     svg
     {
         display: none;
+    }
+    
+    #NotTrending
+    {
+        flex-direction: column;
+    }
+    #NotTrending section
+    {
+        order:1;
+    }
+    aside
+    {
+        display: flex;
+        align-items:flex-start;
+        order:0;
+        max-width: 100%;
     }
 } 
 /*M a caso*/
